@@ -1,0 +1,47 @@
+{% capture pageTitle %}{{ page_title }}{% if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif %}{% if current_page != 1 %} &ndash; Page {{ current_page }}{% endif %}{% unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless %}{% endcapture %}
+{% capture pageDesc %}{{ page_description | escape }}{% endcapture %}
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>{{ pageTitle }}</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="{{ pageDesc }}">
+
+<link rel="shortcut icon" href="assets/favicon.ico">
+<link rel="stylesheet" href="{{ 'vendor.min.css' | asset_url }}">
+<link rel="stylesheet" href="{{ 'main.min.css' | asset_url }}">
+<link rel="canonical" href="{{ canonical_url }}" />
+
+{{ content_for_header }}
+{{ 'shopify_common.js' | shopify_asset_url | script_tag }}
+{% if template contains 'customers' %}  
+{{ 'customer_area.js'  | shopify_asset_url | script_tag }}
+{% endif %}
+{{ 'shopify_common.js'  | asset_url | script_tag }}
+{{ 'option_selection.js' | shopify_asset_url | script_tag }}
+
+<meta property="og:title" content="{{ pageTitle }}" /> 
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ canonical_url }}" />
+<meta property="og:image" content="" />
+<meta property="og:description" content="{{ pageDesc }}"/>
+<meta property="fb:app_id" content="" /> 
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<body class="fs-grid">
+  <div id="wrapper">
+    {% include 'header' %}
+    {{ content_for_layout }}
+    {% include 'footer' %}
+  </div>
+  <script src="{{ 'vendor.min.js' | asset_url }}"></script>
+  <script src="{{ 'main.min.js' | asset_url }}"></script>
+</body>
+
+</html>
