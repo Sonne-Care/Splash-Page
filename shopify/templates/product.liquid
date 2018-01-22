@@ -1,7 +1,11 @@
-<h2>{{ product.title }}</h2>
-{{ product.description }}
-<form action="/cart/add" method="post" enctype="multipart/form-data">
-    <select name="id">
+<div class="fs-row">
+  <div class="fs-cell fs-all-full">
+    <meta itemprop="url" content="{{ shop.url }}{{ product.url }}">
+    <meta itemprop="image" content="{{ product.featured_image.src | img_url: 'grande' }}">
+    <h2>{{ product.title }}</h2>
+    {{ product.description }}
+    <form action="/cart/add" method="post" enctype="multipart/form-data">
+      <select name="id" id="productSelect">
         {% for variant in product.variants %}
         {% if variant.available == true %}
         <option value="{{variant.id}}"> {{ variant.title }} for {{ variant.price | money_with_currency }}</option>
@@ -9,6 +13,33 @@
         <option disabled="disabled"> {{ variant.title }} - sold out!</option>
         {% endif %}
         {% endfor %}
-    </select>
-    <input type="submit" name="add" id="add" value="Add to Cart" class="button">
-</form>
+      </select>
+      <input type="submit" name="add" id="add" value="Add to Cart" class="button">
+    </form>
+  </div>
+</div>
+
+<script>
+  var selectCallback = function(variant, selector) {
+    timber.productPage({
+      money_format: "{{ shop.money_format }}",
+      variant: variant,
+      selector: selector
+    });
+  };
+  jQuery(function($) {
+    new Shopify.OptionSelectors('productSelect', {
+      product: {{ product | json }},
+      onVariantSelected: selectCallback,
+      enableHistoryState: true
+    });
+    // Add label if only one product option and it isn't 'Title'. Could be 'Size'.
+    {% if product.options.size == 1 and product.options.first != 'Title' %}
+      $('.selector-wrapper:eq(0)').prepend('<label for="productSelect-option-0">{{ product.options.first | escape }}</label>');
+    {% endif %}
+    // Hide selectors if we only have 1 variant and its title contains 'Default'.
+    {% if product.variants.size == 1 and product.variants.first.title contains 'Default' %}
+      $('.selector-wrapper').hide();
+    {% endif %}
+  });
+</script>
