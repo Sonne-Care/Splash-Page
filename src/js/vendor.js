@@ -8,4 +8,4 @@
 // Formstone Components
 // @codekit-append "../bower_components/formstone/dist/js/swap.js"
 // @codekit-append "../bower_components/formstone/dist/js/carousel.js"
-// @codekit-append "../bower_components/formstone/dist/js/equalize.js"
+// @codekit-append "../bower_components/formstone/dist/js/background.js"
