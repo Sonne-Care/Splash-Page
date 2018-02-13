@@ -1,0 +1,5 @@
+<div class="carousel carousel_fade" data-carousel-options='{"single":true,"pagination":false,"autoHeight":true,"controls":false}'>
+{% for image in product.images %}
+<div><img src="{{ image.src | img_url: '2048x2048' }}" alt="{{ image.alt | escape }}" class="img-responsive img-full"></div>
+{% endfor %}
+</div>

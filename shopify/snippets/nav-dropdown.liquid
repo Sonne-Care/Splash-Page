@@ -1,0 +1,18 @@
+<span class="button button-clear button-last">Shop By →</span>
+
+<select data-dropdown-options='{"label":"{{ linklists.collection.title }}", "links": true}'>
+{% for link in linklists.collection.links %}
+<option value="{{ link.url }}">{{ link.title }}</option>
+{% endfor %}
+</select>
+
+<select data-dropdown-options='{"label":"{{ linklists.products.title }}", "links": true}'>
+{% for link in linklists.products.links %}
+<option value="{{ link.url }}">{{ link.title }}</option>
+{% endfor %}
+</select>
+
+{% for link in linklists.products.links %}
+<a class="button button-clear" href="{{ link.url }}">{{ link.title }}</a>
+{% endfor %}
+

@@ -1,0 +1,9 @@
+{% assign count = 0 %}
+{% if product.images.size > 1 %}
+{% for image in product.images %}
+{% assign count = count | plus: 1 %}
+<div id="thumb-{{ count }}" class="product-thumb" onclick='$(".carousel").carousel("jump", {{ count }});'>
+<img src="{{ image.src | img_url: 'grande' }}" alt="{{ image.alt | escape }}" class="img-responsive">
+</div>
+{% endfor %}
+{% endif %}

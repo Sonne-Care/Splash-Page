@@ -33,6 +33,7 @@
   ],
   "private": true,
   "dependencies": {
-    "howler.css": "howlercss#*"
+    "howler.css": "howlercss#*",
+    "infinite-scroll": "^3.0.3"
   }
 }

@@ -1,0 +1,82 @@
+<div id="product-{{ forloop.index | plus:paginate.current_offset }}" class="grid-item product-item fs-cell fs-padded {{ itemClass }}">
+  <div class="product-item__images">
+    <a class="product-item__link" href="{{ product.url | within: collection }}">
+      <img class="img-responsive product-item__images--first" src="{{  product.images[0] | img_url: '1024x1024' }}" alt="{{ product.title | escape }}" />
+      {% if product.images.size > 1 %} 
+      <img class="img-responsive product-item__images--second" src="{{  product.images[1] | img_url: '1024x1024' }}" alt="{{ product.title | escape }}" />
+      {% endif %}
+    </a>
+  </div>
+  <div class="product-item-info relative">
+    <div class="product-item-info__top">
+      <span class="product-item__title"><a href="{{ product.url | within: collection }}">{{ product.title }}</a></span>
+    </div>
+    <div class="product-item-info__bottom">
+      <div class="product-item__price">
+        {% if on_sale %}
+          {% if product.price_varies %}
+            {% assign sale_price = product.price | money %}
+            {{ 'products.product.on_sale_from_html' | t: price: sale_price }}
+          {% else %}
+            <strong>{{ 'products.product.on_sale' | t }}</strong>
+            {{ product.price | money }}
+          {% endif %}
+        {% else %}
+          {% if product.price_varies %}
+            {% assign price = product.price | money %}
+            {{ 'products.general.from_text_html' | t: price: price }}
+          {% else %}
+            {{ product.price | money }}
+          {% endif %}
+        {% endif %}
+        {% if sold_out %}
+          <span class="product-item-price--soldout">Sold Out</span>
+        {% endif %}
+        {% if on_sale %}
+          <span class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
+          <br><s>{{ product.compare_at_price | money }}</s>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  {% comment %}
+  <a href="#" 
+    class="swap product-item__quickbtn" 
+    data-productadd='productSelect-{{ forloop.index | plus:paginate.current_offset }}' 
+    data-swap-linked=".product-{{ forloop.index | plus:paginate.current_offset }}" 
+    data-swap-target='#product-{{ forloop.index | plus:paginate.current_offset }}-quick'>Quick Look</a>
+  
+  <a href="{{ product.url }}" class="lightbox">Quicklook</a>
+  {% endcomment %}
+  <hr class="invisible">
+</div>
+
+<div id="product-{{ forloop.index | plus:paginate.current_offset }}-quick" class="product-quick fs-grid-fluid wrapper hidden">
+  <div class="product-quick__close swap" data-swap-target="#product-{{ forloop.index | plus:paginate.current_offset }}-quick" data-swap-linked=".product-{{ forloop.index | plus:paginate.current_offset }}">x</div>
+  <div class="fs-row">
+    <div class="fs-cell fs-lg-half fs-md-half fs-sm-full">
+      <img class="img-responsive" src="{{ product.featured_image | product_img_url: '1024x1024' }}" alt="{{ product.title | escape }}" />
+    </div>
+    <div class="fs-cell fs-lg-half fs-md-half fs-sm-full">
+      <div class="product-collection">← {{ collection.title }}</div>
+      <div class="product-title">{{ product.title }}</div>
+      <div class="product-type">{{ product.price | money }}</div>
+      <hr class="invisible compact">
+      <form action="/cart/add" method="post" enctype="multipart/form-data">
+        <select name="id" id="productSelect-{{ forloop.index | plus:paginate.current_offset }}" class="dropdown-disable">
+          {% for variant in product.variants %}
+          {% if variant.available == true %}
+          <option value="{{variant.id}}"> {{ variant.title }} for {{ variant.price | money_with_currency }}</option>
+          {% else %}
+          <option disabled="disabled"> {{ variant.title }} - sold out!</option>
+          {% endif %}
+          {% endfor %}
+        </select>
+        <hr class="invisible compact">
+        <input type="submit" name="add" id="add" value="Add to Cart" class="button">
+        <hr class="invisible compact">
+        {{ product.description }}
+      </form>
+    </div>
+  </div>
+</div>

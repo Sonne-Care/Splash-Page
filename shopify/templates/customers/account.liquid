@@ -1,0 +1,95 @@
+<!-- /templates/customers/account.liquid -->
+
+<div class="page page-account account">
+
+  <div class="fs-row">
+    
+    <div class="account-header-wrapper fs-cell fs-all-full">
+      <span class="account-title button button-clear button-first">{{ 'customer.account.title' | t }}</span>
+      <a href="/account/logout" class="account-title__alt button button-outline float-right">{{ 'layout.customer.log_out' | t }}</a>
+    </div>
+
+    <hr class="divider fs-cell">
+
+    <div class="fs-cell fs-lg-8 fs-md-full fs-sm-full">
+      <div class="account-header">{{ 'customer.orders.title' | t }}</div>
+      {% paginate customer.orders by 20 %}
+      {% if customer.orders.size != 0 %}
+      <div class="table-wrap">
+        <table class="full">
+          <thead>
+            <tr>
+              <th>{{ 'customer.orders.order_number' | t }}</th>
+              <th>{{ 'customer.orders.date' | t }}</th>
+              <th>{{ 'customer.orders.payment_status' | t }}</th>
+              <th>{{ 'customer.orders.fulfillment_status' | t }}</th>
+              <th>{{ 'customer.orders.total' | t }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for order in customer.orders %}
+            <tr>
+              <td>{{ order.name | link_to: order.customer_url }}</td>
+              <td>{{ order.created_at | date: format: 'month_day_year' }}</td>
+              <td>{{ order.financial_status_label }}</td>
+              <td>{{ order.fulfillment_status_label }}</td>
+              <td>{{ order.total_price | money }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      {% else %}
+      <p>{{ 'customer.orders.none' | t }}</p>
+      {% endif %}
+      {% if paginate.pages > 1 %}
+      <hr class="divider">
+      <div class="pagination">
+        {{ paginate | default_pagination | replace: '&laquo; Previous', '&larr;' | replace: 'Next &raquo;', '&rarr;' }}
+      </div>
+      {% endif %}
+      {% endpaginate %}
+    </div>
+
+    <hr class="fs-cell fs-lg-hide fs-md-full fs-sm-full invisible">
+    
+    <div class="fs-cell fs-lg-3 fs-lg-push-1 fs-md-full fs-sm-full">
+      <div class="account-title">{{ 'customer.account.details' | t }}</div>
+      <hr class="invisible compact">
+      <strong>{{ customer.name }}</strong>
+
+      {% if customer.default_address != nil %}
+      <p>
+        {{ customer.default_address.address1 }}<br>
+
+        {% if customer.default_address.address2 != "" %}
+        {{ customer.default_address.address2 }}<br>
+        {% endif %}
+
+        {% if customer.default_address.city != "" %}
+        {{ customer.default_address.city }}<br>
+        {% endif %}
+
+        {% if customer.default_address.province_code != "" %}
+        {{ customer.default_address.province_code | upcase }}<br>
+        {% endif %}
+
+        {% if customer.default_address.zip != "" %}
+        {{ customer.default_address.zip | upcase }}<br>
+        {% endif %}
+
+        {% if customer.default_address.country != "" %}
+        {{ customer.default_address.country }}<br>
+        {% endif %}
+
+        {% if customer.default_address.phone != "" %}
+        {{ customer.default_address.phone }}
+        {% endif %}
+      </p>
+      {% endif %}
+      <p><a href="/account/addresses">{{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})</a></p>
+    </div>
+
+  </div>
+  
+</div>

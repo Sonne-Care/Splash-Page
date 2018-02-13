@@ -1,7 +1,8 @@
-{% comment %}
-  Very important reading:
-  http://docs.shopify.com/themes/liquid-basics/what-is-true-and-false-in-liquid
-  Learn how to read theme settings in your theme.
-{% endcomment %}
+{% assign itemClass = 'fs-lg-third fs-md-third fs-sm-full fs-xs-full' %}
 
-{{ page.content }}
+<div class="fs-row">
+  {% for product in collections.all.products %}
+    {% include 'product-item' %}
+  {% endfor %}
+</div>
+

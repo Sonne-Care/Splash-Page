@@ -1,21 +1,42 @@
-<div class="fs-row">
-  <div class="fs-cell fs-all-full">
-    <meta itemprop="url" content="{{ shop.url }}{{ product.url }}">
-    <meta itemprop="image" content="{{ product.featured_image.src | img_url: 'grande' }}">
-    <h2>{{ product.title }}</h2>
-    {{ product.description }}
-    <form action="/cart/add" method="post" enctype="multipart/form-data">
-      <select name="id" id="productSelect">
-        {% for variant in product.variants %}
-        {% if variant.available == true %}
-        <option value="{{variant.id}}"> {{ variant.title }} for {{ variant.price | money_with_currency }}</option>
-        {% else %}
-        <option disabled="disabled"> {{ variant.title }} - sold out!</option>
-        {% endif %}
-        {% endfor %}
-      </select>
-      <input type="submit" name="add" id="add" value="Add to Cart" class="button">
-    </form>
+<meta itemprop="url" content="{{ shop.url }}{{ product.url }}">
+<meta itemprop="image" content="{{ product.featured_image.src | img_url: 'grande' }}">
+
+<div id="product" class="product page">
+  <div class="fs-row">
+    <div class="fs-cell fs-lg-4 fs-md-full fs-sm-3 product-info">
+      <div class="product-info-wrapper">
+        <div class="product-details">
+          <div class="product-collection"><a href="{{ collection.url }}">{{ collection.title }}</a></div>
+          <div class="product-title">{{ product.title }}</div>
+          <div class="product-type">{{ product.price | money }}</div>
+        </div>
+        <hr class="invisible compact">
+        <form action="/cart/add" method="post" enctype="multipart/form-data">
+          <select name="id" id="productSelect">
+            {% for variant in product.variants %}
+            {% if variant.available == true %}
+            <option value="{{variant.id}}"> {{ variant.title }} for {{ variant.price | money_with_currency }}</option>
+            {% else %}
+            <option disabled="disabled"> {{ variant.title }} - sold out!</option>
+            {% endif %}
+            {% endfor %}
+          </select>
+          <hr class="invisible compact">
+          <button type="submit" name="add" id="AddToCart" class="btn">
+            <span id="AddToCartText">{{ 'products.product.add_to_cart' | t }}</span>
+          </button>
+        </form>
+        <hr class="invisible compact">
+        {{ product.description }}
+      </div>
+    </div>
+
+    {% if product.images.size > 1 %}
+    <div class="fs-cell fs-lg-2 fs-md-1 fs-sm-hide">{% include 'product-thumbs' %}</div>
+    <div class="fs-cell fs-lg-6 fs-md-5 fs-sm-3">{% include 'product-images' %}</div>
+    {% else %}
+    <div class="fs-cell fs-lg-7 fs-lg-push-1 fs-md-full fs-sm-3">{% include 'product-image-single' %}</div>
+    {% endif %}
   </div>
 </div>
 
@@ -41,5 +62,6 @@
     {% if product.variants.size == 1 and product.variants.first.title contains 'Default' %}
       $('.selector-wrapper').hide();
     {% endif %}
+    $("select:not(#productSelect)").dropdown();
   });
 </script>

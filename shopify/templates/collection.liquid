@@ -1,11 +1,22 @@
+{% assign itemClass = 'fs-lg-third fs-md-third fs-sm-full fs-xs-full' %}
+
 <div class="fs-row">
   {% if collection.all_products_count > 0 %}
+  {% paginate collection.products by 12 %}
   {% for product in collection.products %}
-  {% include 'product-item' %}
+    {% include 'product-item' %}
   {% endfor %}
+  {% if paginate.pages > 1 %}
+  <div class="fs-cell fs-all-full pagination">
+    <hr class="divider">
+    {{ paginate | default_pagination | replace: '&laquo; Previous', '&larr;' | replace: 'Next &raquo;', '&rarr;' }}
+  </div>
+  {% endif %}
+  {% endpaginate %}
   {% else %}
   <div class="fs-cell fs-all-full">
     <p>Sorry, there are no products in this collection</p>
   </div>
 {% endif %}
 </div>
+

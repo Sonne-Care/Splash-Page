@@ -39,8 +39,11 @@
     {{ content_for_layout }}
     {% include 'footer' %}
   </div>
-  <script src="{{ 'vendor.min.js' | asset_url }}"></script>
-  <script src="{{ 'main.min.js' | asset_url }}"></script>
+  {{ 'fastclick.min.js' | asset_url | script_tag }}
+  {{ 'theme.js'  | asset_url | script_tag }}
+  {{ 'vendor.min.js' | asset_url | script_tag }}
+  {{ 'main.min.js'  | asset_url | script_tag }}
+  {% include 'ajaxify-cart' %}
 </body>
 
 </html>

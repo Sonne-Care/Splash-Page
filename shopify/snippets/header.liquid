@@ -5,12 +5,9 @@
     </div>
     <div class="fs-cell fs-all-half text-right">
       {% include 'nav' %}
-      <a href="/cart">
-        <span class="icon icon-cart" aria-hidden="true">Cart</span>
-        (<span id="CartCount">{{ cart.item_count }}</span>)
-        {% comment %}
-        <span id="CartCost">{{ cart.total_price | money }}</span>
-        {% endcomment %}
+      <a class="button-cart button button-clear button-last" href="/cart">
+        Cart
+        (<span id="header-cart-count" class="button-cart__count cart-count">{{ cart.item_count }}</span>)
       </a>
     </div>
   </div>
