@@ -10,8 +10,7 @@
           <div class="product-title">{{ product.title }}</div>
           <div class="product-type">{{ product.price | money }}</div>
         </div>
-        <hr class="invisible compact">
-        <form action="/cart/add" method="post" enctype="multipart/form-data">
+        <form class="product-form" action="/cart/add" method="post" enctype="multipart/form-data">
           <select name="id" id="productSelect">
             {% for variant in product.variants %}
             {% if variant.available == true %}
@@ -21,13 +20,13 @@
             {% endif %}
             {% endfor %}
           </select>
-          <hr class="invisible compact">
           <button type="submit" name="add" id="AddToCart" class="btn">
             <span id="AddToCartText">{{ 'products.product.add_to_cart' | t }}</span>
           </button>
         </form>
-        <hr class="invisible compact">
-        {{ product.description }}
+        <div class="product-desc">
+          {{ product.description }}
+        </div>
       </div>
     </div>
 

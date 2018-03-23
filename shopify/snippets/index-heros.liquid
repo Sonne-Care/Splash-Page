@@ -1,0 +1,16 @@
+<div class="banner">
+{% for i in (1..6) %}
+{% capture hero_image  %}hero-{{ i }}-image{% endcapture %}
+{% capture hero_enable %}hero-{{ i }}-enable{% endcapture %}
+{% capture hero_link   %}hero-{{ i }}-link{% endcapture %}
+
+{% if settings[hero_enable] %}
+  <div class="banner-slide relative">
+    <a href="{{ settings[hero_link] }}">
+      <img src="{{ settings[hero_image] | img_url: '2048x2048' }}" class="img-responsive" />
+    </a>
+  </div>
+{% endif %}
+
+{% endfor %}
+</div>

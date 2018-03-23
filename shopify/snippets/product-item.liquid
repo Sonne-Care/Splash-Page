@@ -1,9 +1,9 @@
 <div id="product-{{ forloop.index | plus:paginate.current_offset }}" class="grid-item product-item fs-cell fs-padded {{ itemClass }}">
   <div class="product-item__images">
     <a class="product-item__link" href="{{ product.url | within: collection }}">
-      <img class="img-responsive product-item__images--first" src="{{  product.images[0] | img_url: '1024x1024' }}" alt="{{ product.title | escape }}" />
+      <img class="img-responsive product-item__images--first first" src="{{  product.images[0] | img_url: '1024x1024' }}" alt="{{ product.title | escape }}" />
       {% if product.images.size > 1 %} 
-      <img class="img-responsive product-item__images--second" src="{{  product.images[1] | img_url: '1024x1024' }}" alt="{{ product.title | escape }}" />
+      <img class="img-responsive product-item__images--second second" src="{{  product.images[1] | img_url: '1024x1024' }}" alt="{{ product.title | escape }}" />
       {% endif %}
     </a>
   </div>

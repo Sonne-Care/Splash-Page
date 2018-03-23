@@ -35,7 +35,9 @@ function infinite(){
 function init(){
   formstone();
   infinite();
-  feather.replace();
+  feather.replace({
+    'stroke-width': 1,
+  });
 }
 
 init();

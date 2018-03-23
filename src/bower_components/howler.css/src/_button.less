@@ -21,7 +21,6 @@ input[type='submit'] {
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
-  -webkit-font-smoothing: antialiased;
 
   &:focus, &:hover {
     background-color: darken(@color-secondary, 10%);
@@ -70,6 +69,19 @@ input[type='submit'] {
         color: @color-secondary;
       }
     }
+  }
+
+  &.button-nav {
+    font-weight: normal;
+    padding: 0 1.25rem;
+  }
+
+  &.button-first {
+    padding-left: 0;
+  }
+
+  &.button-last {
+    padding-right: 0;
   }
 
 }

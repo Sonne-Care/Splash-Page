@@ -4,6 +4,7 @@
 {% assign count = count | plus: 1 %}
 <div id="thumb-{{ count }}" class="product-thumb" onclick='$(".carousel").carousel("jump", {{ count }});'>
 <img src="{{ image.src | img_url: 'grande' }}" alt="{{ image.alt | escape }}" class="img-responsive">
+<hr class="invisible compact">
 </div>
 {% endfor %}
 {% endif %}

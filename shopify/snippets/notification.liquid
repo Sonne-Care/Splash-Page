@@ -1,0 +1,12 @@
+{% assign notify = settings.notification-bar %}
+{% assign enable = settings.notification-enable %}
+{% if enable %}
+<div id="notification" class="notify">
+  <div class="wrapper wrapper--nosides bg--black color--white text-center">
+    <div class="notify-content">
+      {{ notify }}
+    </div>
+    <a href="#" class="ss-gizmo ss-delete notify-close swap" data-swap-target="#notification">Close</a>
+  </div>
+</div>
+{% endif %}

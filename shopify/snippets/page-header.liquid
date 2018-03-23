@@ -1,0 +1,20 @@
+<div id="{{ template }}-header" class="page-header wrapper--nosides text-center--mobile">
+  <div class="fs-row">
+    <div class="fs-cell fs-all-half">
+      {% if template contains 'collection' %}
+      <a href="/">Home</a>
+      <span>></span>
+      <span class="page-header__title">{{ title }}</span>
+      {% else %}
+      <h1 class="page-header__title">{{ title }}</h1>
+      {% endif %}
+    </div>
+    {% if template contains 'collection' %}
+    <div class="fs-cell fs-all-half text-right page-header__sorting">
+      {% include 'collection-sorting' %}
+    </div>
+    {% endif %}
+  </div>
+</div>
+
+<hr class="divider nomargin">

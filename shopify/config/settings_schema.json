@@ -4,35 +4,27 @@
     "settings": [
       {
         "type": "header",
-        "content": "Logo Options"
+        "content": "Notification Bar"
       },
       {
-        "type": "color",
-        "id": "bg_color",
-        "label": "Background (example)",
-        "default": "#ffffff"
-      },
-      {
-        "type": "color",
-        "id": "text_color",
-        "label": "Text color (example)",
-        "default": "#cccccc"
+         "type": "textarea",
+         "id": "notification-bar",
+         "default": "Free shipping on orders over $100",
+         "label": "Notification Message"
       },
       {
         "type": "checkbox",
-        "id": "use_logo",
-        "label": "Use Custom Logo?"
+        "id": "notification-enable",
+        "label": "Enable Notification Message"
       },
       {
-        "type": "image",
-        "id": "logo.png",
-        "label": "Custom Logo",
-        "max-width": 940,
-        "max-height": 300
+        "type": "header",
+        "content": "Site Logo"
       },
       {
-        "type": "paragraph",
-        "content": "Maximum logo dimensions are 940px wide by 300px high.Your uploaded file will be resized to fit within those constraints.Need a full-width banner? Upload an image with a width of 940px, and a height of 300px or less."
+        "type": "image_picker",
+        "id": "site_logo",
+        "label": "Site Logo"
       }
     ]
   }

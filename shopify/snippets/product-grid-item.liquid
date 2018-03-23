@@ -1,0 +1,9 @@
+<div class="{{ width }} product grid-item text-center--mobile wrapper">
+  <a href="{{ product.url | within: collection }}">
+    <img class="img-responsive" src="{{ product.featured_image | product_img_url: 'grande' }}" alt="{{ product.title | escape }}" />
+    <span class="wrapper--nosides">
+      <h3>{{ product.title }}</h3>
+      <h4>{{ product.price | money }}</h4>
+    </span>
+  </a>
+</div>

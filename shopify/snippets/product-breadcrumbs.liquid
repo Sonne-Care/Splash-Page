@@ -1,0 +1,14 @@
+{% if collection.handle %}
+<div id="breadcrumbs" class="wrapper--nosides text-center--mobile">
+  <div class="fs-row"> 
+    <div class="fs-cell fs-all-full">
+      <a href="/">Home</a>
+      <span>></span>
+      <a href="{{ collection.url }}">{{ collection.title }}</a>
+      <span>></span>
+      <span>{{ product.title }}</span>
+    </div>
+  </div>
+</div>
+<hr class="divider nomargin">
+{% endif %}

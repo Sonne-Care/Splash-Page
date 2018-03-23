@@ -1,0 +1,10 @@
+<hr class="divider nomargin">
+<footer id="footer" class="wrapper--nosides text-center--mobile">
+  <div class="fs-row">
+    <div class="fs-cell fs-all-full">
+      {% for link in linklists.footer.links %}
+      <a href="{{ link.url }}">{{ link.title }}</a>
+      {% endfor %}
+    </div>
+  </div>
+</footer>

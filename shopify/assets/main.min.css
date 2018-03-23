@@ -4967,7 +4967,6 @@ input[type='submit'] {
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
-  -webkit-font-smoothing: antialiased;
 }
 .button:focus,
 button:focus,
@@ -5087,6 +5086,28 @@ input[type='reset'].button-clear[disabled]:hover,
 input[type='submit'].button-clear[disabled]:hover {
   background-color: transparent;
   color: #606c76;
+}
+.button.button-nav,
+button.button-nav,
+input[type='button'].button-nav,
+input[type='reset'].button-nav,
+input[type='submit'].button-nav {
+  font-weight: normal;
+  padding: 0 1.25rem;
+}
+.button.button-first,
+button.button-first,
+input[type='button'].button-first,
+input[type='reset'].button-first,
+input[type='submit'].button-first {
+  padding-left: 0;
+}
+.button.button-last,
+button.button-last,
+input[type='button'].button-last,
+input[type='reset'].button-last,
+input[type='submit'].button-last {
+  padding-right: 0;
 }
 hr.divider {
   background: #f2f2f2;
@@ -5335,16 +5356,56 @@ h6 {
   border-bottom: 1px solid #f2f2f2;
   margin-bottom: 50px;
 }
-#header nav {
-  display: inline-block;
+#footer {
+  padding: 25px 0;
+  border-top: 1px solid #f2f2f2;
+  margin-top: 50px;
 }
-#header nav ul {
-  margin: 0;
-  padding: 0;
-  display: inline-block;
+.cart .quantity {
+  width: 100%;
+  text-align: inherit;
 }
-#header nav ul li {
-  display: inline-block;
+@media screen and (min-width: 980px) {
+  .product .product-info-wrapper {
+    padding-right: 25px;
+  }
+}
+.product .product-details {
+  margin-bottom: 15px;
+}
+.product .product-form {
+  margin-bottom: 15px;
+}
+.product .product-desc ul {
+  margin-left: 0;
+}
+.product-item__images {
+  position: relative;
+}
+.product-item__images img {
+  transition: 600ms ease;
+}
+.product-item__images--first {
+  position: relative;
+  z-index: 2;
+}
+.product-item__images--second {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+}
+.product-item__link {
+  display: block;
+  position: relative;
+}
+.product-item__link:hover .first {
+  opacity: 0;
+}
+.product-item-info__top {
+  padding-top: 10px;
+}
+.product-item-info__bottom {
+  padding-top: 0;
 }
 .account .table-wrap {
   overflow: scroll;
