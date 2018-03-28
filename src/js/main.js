@@ -1,5 +1,7 @@
 function formstone(){
-  $('.background').background();
+  $('.background').background({
+    lazy: true
+  });
   $('.carousel').carousel();
   $('.swap').swap();  
   $("select:not(#productSelect, .dropdown-disable)").dropdown({

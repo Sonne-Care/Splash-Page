@@ -35,9 +35,11 @@
 
 <body class="fs-grid">
   <div id="wrapper">
-    {% include 'header' %}
     {{ content_for_layout }}
+    {% comment %}
+    {% include 'header' %}
     {% include 'footer' %}
+    {% endcomment %}
   </div>
   {{ 'fastclick.min.js' | asset_url | script_tag }}
   {{ 'theme.js'  | asset_url | script_tag }}

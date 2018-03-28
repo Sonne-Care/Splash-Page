@@ -4,6 +4,22 @@
     "settings": [
       {
         "type": "header",
+        "content": "Subscribe Notification"
+      },
+      {
+        "type": "text",
+        "id": "subscribe-title",
+        "default": "Join Today",
+        "label": "Subscription Title"
+      },
+      {
+        "type": "textarea",
+        "id": "subscribe-copy",
+        "default": "Join our newsletter",
+        "label": "Subscription Message"
+      },
+      {
+        "type": "header",
         "content": "Notification Bar"
       },
       {

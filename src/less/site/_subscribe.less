@@ -1,0 +1,77 @@
+.subscribe {
+
+  position: fixed;
+  background-color: @white;
+  box-shadow: 0 @spacer @spacer*2 rgba(0,0,0,.05);
+
+  @media @min {
+    margin: 10px;
+  }
+  @media @tablet {
+    margin: @spacer; 
+  }
+  @media @desktop {
+    margin: @spacer*2;
+    transform: translateY(120%);
+    transition: 600ms ease;
+  }
+
+  form {
+    min-width: 100%!important;
+  }
+
+  &.fs-swap {
+    &-enabled {
+      transform: translateY(0);   
+    }
+    &-active {
+      transform: translateY(120%);
+    }
+  }
+
+  & &-wrapper {
+    @media @min {
+      margin: @spacer;
+      position: relative;  
+    }
+    @media @tablet {
+      margin: @spacer*2 @spacer;
+      position: relative;  
+    }
+  }
+
+  & &-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: @brown;
+    padding: 20px;
+  }
+
+  & &-title {
+    color: @brown;
+    font-size: 2.75rem;
+    font-weight: 300;
+    line-height: 1.3;
+    margin-bottom: 0;
+  }
+
+  & &-desc {
+    color: @gray;
+    margin-bottom: 20px;
+  }
+
+  &--bottom {
+    bottom: 0
+  }
+  &--top {
+    top: 0
+  }
+  &--right {
+    right: 0
+  }
+  &--left {
+    left: 0
+  }
+
+}

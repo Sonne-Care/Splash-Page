@@ -1,1 +1,28 @@
+.index {
 
+  &--covered {
+    .cover();
+    background-color: @bgGray;
+  }
+
+  & &-content {
+
+    z-index: 25;
+
+    &--centered {
+      .center();
+      width: 100%;
+    }
+
+    ul {
+      margin-left: 0;
+      padding: 0;
+    }
+
+  }
+
+  & .fs-background-media {
+    transition: opacity 500ms ease;
+  }
+
+}

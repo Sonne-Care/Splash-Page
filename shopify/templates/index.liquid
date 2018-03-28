@@ -1,8 +1,11 @@
-{% assign itemClass = 'fs-lg-third fs-md-third fs-sm-full fs-xs-full' %}
-
-<div class="fs-row">
-  {% for product in collections.all.products %}
-    {% include 'product-item' %}
-  {% endfor %}
+<div class="index index--covered background" data-background-options='{"source":"{{ 'home.jpg'  | asset_url }}"}'>
+  <div class="index-content index-content--centered">
+    <div class="fs-row">
+      <div class="fs-cell fs-lg-half fs-md-half fs-sm-full">
+        {{ pages.home.content }}
+      </div>
+    </div>
+  </div>
 </div>
 
+{% include 'subscribe' %}

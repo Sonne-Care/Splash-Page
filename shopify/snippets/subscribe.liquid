@@ -1,0 +1,32 @@
+<div id="subscribe" class="subscribe subscribe--bottom subscribe--right fs-grid-fluid">
+  <a href="" class="subscribe-close swap" data-swap-target="#subscribe"><i data-feather="x"></i></a>
+  <div class="subscribe-wrapper">
+    <div class="fs-row">
+      <div class="fs-cell fs-all-full">
+        <div class="subscribe-title">{{ settings.subscribe-title }}</div>
+        <div class="subscribe-desc">{{ settings.subscribe-copy }}</div>
+      </div>
+    </div>
+    <form id="email_signup" class="subscribe-form klaviyo_styling klaviyo_standard_embed_PUbyL2" action="//manage.kmail-lists.com/subscriptions/subscribe" data-ajax-submit="//manage.kmail-lists.com/ajax/subscriptions/subscribe" method="GET" target="_blank" novalidate="novalidate">
+      <input type="hidden" name="g" value="PUbyL2">
+      <div class="fs-row">
+        <div class="klaviyo_field_group fs-cell fs-all-full">
+          <input type="email" value="" name="email" id="k_id_email" class="footer-nav__form-input" placeholder="Sign up for the Newsletter" />
+        </div>
+        <div class="klaviyo_messages fs-cell fs-all-full">
+          <div class="success_message" style="display:none;"></div>
+          <div class="error_message" style="display:none;"></div>
+          </div>
+        <div class="klaviyo_form_actions fs-cell fs-all-full">
+          <button type="submit" class="klaviyo_submit_button button button-full">Subscribe</button>
+        </div>
+      </div>
+    </form>
+    <script type="text/javascript" src="//www.klaviyo.com/media/js/public/klaviyo_subscribe.js"></script>
+    <script type="text/javascript">
+      KlaviyoSubscribe.attachToForms('#email_signup', {
+        hide_form_on_success: true
+      });
+    </script>
+  </div>
+</div>

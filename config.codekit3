@@ -202,16 +202,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"\/shopify\/assets\/password.jpg": {
-		"ft": 16384,
-		"iS": 192525,
-		"oA": 0,
-		"oAP": "\/shopify\/assets\/password.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
 	"\/shopify\/assets\/shopify_common.js": {
 		"ft": 64,
 		"ma": 0,
@@ -340,13 +330,6 @@
 		"oAP": "\/shopify\/sections\/quote-template.liquid",
 		"oF": 0
 		},
-	"\/shopify\/snippets\/ajax-cart.liquid": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify\/snippets\/ajax-cart.liquid",
-		"oF": 0
-		},
 	"\/shopify\/snippets\/ajaxify-cart.liquid": {
 		"cB": 0,
 		"ft": 8192,
@@ -373,41 +356,6 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/shopify\/snippets\/header.liquid",
-		"oF": 0
-		},
-	"\/shopify\/snippets\/index-heros.liquid": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify\/snippets\/index-heros.liquid",
-		"oF": 0
-		},
-	"\/shopify\/snippets\/index-product.liquid": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify\/snippets\/index-product.liquid",
-		"oF": 0
-		},
-	"\/shopify\/snippets\/nav-dropdown-mobile.liquid": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify\/snippets\/nav-dropdown-mobile.liquid",
-		"oF": 0
-		},
-	"\/shopify\/snippets\/nav-dropdown.liquid": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify\/snippets\/nav-dropdown.liquid",
-		"oF": 0
-		},
-	"\/shopify\/snippets\/nav.liquid": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify\/snippets\/nav.liquid",
 		"oF": 0
 		},
 	"\/shopify\/snippets\/notification.liquid": {
@@ -487,11 +435,11 @@
 		"oAP": "\/shopify\/snippets\/site-footer.liquid",
 		"oF": 0
 		},
-	"\/shopify\/snippets\/site-nav.liquid": {
+	"\/shopify\/snippets\/subscribe.liquid": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/shopify\/snippets\/site-nav.liquid",
+		"oAP": "\/shopify\/snippets\/subscribe.liquid",
 		"oF": 0
 		},
 	"\/shopify\/snippets\/swatch.liquid": {
@@ -5229,6 +5177,23 @@
 		"sM": 0,
 		"sU": 0
 		},
+	"\/src\/less\/site\/_subscribe.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/src\/less\/site\/_subscribe.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
 	"\/src\/less\/vendor.less": {
 		"aP": 1,
 		"bl": 0,
@@ -5253,8 +5218,8 @@
 	},
 "projectAttributes": {
 	"creationDate": 538019401,
-	"displayValue": "lammshopify.local",
-	"displayValueWasSetByUser": 0,
+	"displayValue": "Sonne Splash",
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "meme-trap"
 	},
 "projectSettings": {
