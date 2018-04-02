@@ -1,18 +1,19 @@
 .subscribe {
 
   position: fixed;
-  background-color: @white;
-  box-shadow: 0 @spacer @spacer*2 rgba(0,0,0,.05);
+  z-index: 999;
 
   @media @min {
     margin: 10px;
+    width: 90%;
   }
   @media @tablet {
+    width: 75%;
     margin: @spacer; 
   }
   @media @desktop {
     margin: @spacer*2;
-    transform: translateY(120%);
+    width: 960px;
     transition: 600ms ease;
   }
 
@@ -20,13 +21,9 @@
     min-width: 100%!important;
   }
 
-  &.fs-swap {
-    &-enabled {
-      transform: translateY(0);   
-    }
-    &-active {
-      transform: translateY(120%);
-    }
+  & &-bg {
+    background-color: @white;
+    box-shadow: 0 @spacer @spacer*2 rgba(0,0,0,.05);
   }
 
   & &-wrapper {
@@ -61,6 +58,35 @@
     margin-bottom: 20px;
   }
 
+  &.transition {
+    &-in {
+      opacity: 0;
+      &.fs-swap {
+        &-enabled {
+          opacity: 1;
+        }
+        &-active {
+          opacity: 0;
+        }
+      }
+    }
+    &-up {
+      transform: translateY(120%);
+      &.fs-swap {
+        &-enabled {
+          transform: translateY(0);   
+        }
+        &-active {
+          transform: translateY(120%);
+        }
+      }
+    }
+  }
+
+  &--center {
+    .center();
+    margin: 0;
+  }
   &--bottom {
     bottom: 0
   }

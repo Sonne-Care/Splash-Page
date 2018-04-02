@@ -38,7 +38,7 @@ assets/fastclick.min.js:
 assets/home.jpg:
   development: 2018-03-28T16:05:45-04:00   0940634b7f224d8e310f520611ca440d
 assets/main.min.css:
-  development: 2018-03-28T16:12:08-04:00   9407cc99891838c4e7efdcf4274b1d3d
+  development: 2018-04-02T12:24:35-04:00   ca11b175b2c7d0158ffd70090792635c
 assets/main.min.css.map:
   development: 2018-03-28T15:13:19-04:00   e1338bb491140abd827b0f0ee1256615
 assets/main.min.js:
@@ -49,6 +49,8 @@ assets/shopify_common.js:
   development: 2018-03-28T15:13:19-04:00   bf001459d7d6c7c05491db53511b03b1
 assets/soldout.png:
   development: 2018-03-28T15:13:19-04:00   6a7697db19e17aae7568e216c2b365af
+assets/subscribe.jpg:
+  development: 2018-04-02T12:56:45-04:00   7abfe2bb4fe6cc081f8ff284183f0993
 assets/swatches.css.liquid:
   development: 2018-03-28T15:13:19-04:00   75f19ba63a65a3e850ff24a707bac013
 assets/theme.js.liquid:
@@ -58,7 +60,7 @@ assets/vendor.min.css:
 assets/vendor.min.js:
   development: 2018-03-28T15:13:20-04:00   71c92cb7237179ca4e8dac9109ec0d98
 config/settings_data.json:
-  development: 2018-03-28T15:13:23-04:00   99914b932bd37a50b983c5e7c90ae93b
+  development: 2018-03-28T15:38:01-04:00   925f95afab3dbb1edc1e76ee3dd85bd8
 config/settings_schema.json:
   development: 2018-03-28T15:36:26-04:00   65e9666af30ed7199f8f8f823c2b4df5
 layout/theme.liquid:
@@ -106,7 +108,7 @@ snippets/search-grid-item.liquid:
 snippets/site-footer.liquid:
   development: 2018-03-28T15:13:22-04:00   901658ecceb57b4d88460ac5e3e7f7e4
 snippets/subscribe.liquid:
-  development: 2018-03-28T15:53:41-04:00   d72c1c2d6ba1fec452811e106ba2a62b
+  development: 2018-04-02T12:25:25-04:00   cb848c3e2ed969e04de8c22ebf921c23
 snippets/swatch.liquid:
   development: 2018-03-28T15:13:22-04:00   24862626269fffb3aa68f1cda342286c
 snippets/swatches.liquid:
@@ -142,7 +144,7 @@ templates/list-collections.liquid:
 templates/page.liquid:
   development: 2018-03-28T15:13:23-04:00   fac0e67335e3d2665f644c69e0187f92
 templates/password.liquid:
-  development: 2018-03-28T15:13:23-04:00   53eb5f0c8643496a7cfb5458addb14e0
+  development: 2018-04-02T11:48:00-04:00   e6d92c0f476b3877372e525c399bd0e8
 templates/product.liquid:
   development: 2018-03-28T15:13:23-04:00   b4eeaa36e4e582047b26228a097a5ad5
 templates/search.liquid:
