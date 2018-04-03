@@ -1,3 +1,5 @@
+// @codekit-prepend "home.js"
+
 function formstone(){
   $('.background').background({
     lazy: true
