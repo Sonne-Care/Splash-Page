@@ -5,17 +5,32 @@
   & .content {
     padding-top: @spacer*2;
     h1 {
-      font-weight: 300;
-      line-height: 1.5;
-      color: @brown;
+      @media @min {
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 1.5;
+        color: @brown;        
+      }
+      @media @tablet {
+        font-size: 48px;
+        font-weight: 300;
+        line-height: 1.5;
+        color: @brown;        
+      }
     }
     ul {
       margin-left: 0;
       padding: 0;
       text-transform: uppercase;
-      font-size: 13px;
-      letter-spacing: 1.5px;
       color: #A1A1A1;
+      @media @min {
+        font-size: 12px;
+        letter-spacing: 1.5px;
+      }
+      @media @tablet {
+        font-size: 13px;
+        letter-spacing: 1.5px;
+      }
       li {
         display: block;
         margin-bottom: 6px;
@@ -31,7 +46,12 @@
     position: relative;
     z-index: 25;
     &-wrap {
-      height: 100vh;
+      @media @min {
+        height: 85vh;
+      }
+      @media @tablet {
+        height: 100vh;  
+      }
     }
   }
   & &-footer {
@@ -42,6 +62,28 @@
     //background-color: @white;
     height: 80px;
     border-bottom: 1px solid @brown;
+
+    &.mobile {
+      position: relative;
+      height: auto;
+      border-bottom: 0;
+      text-align: left;
+      color: @gray;
+      a {
+        color: @gray;
+      }
+    }
+    &-mobile {
+      text-align: left;
+      .button {
+        height: 50px!important;
+        line-height: 50px!important;
+        padding: 0px!important;
+      }
+      .divider {
+        margin: 0;
+      }
+    }
     &-social {
       text-align: right;
     }
@@ -66,13 +108,24 @@
         &-logo {
           text-align: left;
           position: relative;
+          @media @min {
+            padding-left: 0;
+          }
+          @media @tablet {
+            padding: 0 2rem;
+          }
           img {
             display: inline;
-            width: 125px;
             height: auto;
             position: absolute;
             top: 47%;
             transform: translateY(-50%);
+            @media @min {
+              width: 95px;
+            }
+            @media @tablet {
+              width: 125px;
+            }
           }
         }
         &-info {
