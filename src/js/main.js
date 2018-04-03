@@ -1,5 +1,3 @@
-// @codekit-prepend "home.js"
-
 function formstone(){
   $('.background').background({
     lazy: true
@@ -42,6 +40,7 @@ function init(){
   feather.replace({
     'stroke-width': 1,
   });
+  $('.button-join').click();
 }
 
 init();

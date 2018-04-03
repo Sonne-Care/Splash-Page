@@ -34,6 +34,92 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/shopify\/assets\/Akkurat-Leicht.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/shopify\/assets\/Akkurat-Leicht.eot",
+		"oF": 0
+		},
+	"\/shopify\/assets\/Akkurat-Leicht.otf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/shopify\/assets\/Akkurat-Leicht.otf",
+		"oF": 0
+		},
+	"\/shopify\/assets\/Akkurat-Leicht.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/Akkurat-Leicht.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/shopify\/assets\/Akkurat-Leicht.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/shopify\/assets\/Akkurat-Leicht.ttf",
+		"oF": 0
+		},
+	"\/shopify\/assets\/Akkurat-Leicht.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/shopify\/assets\/Akkurat-Leicht.woff",
+		"oF": 0
+		},
+	"\/shopify\/assets\/AkkuratPro-Regular.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/shopify\/assets\/AkkuratPro-Regular.eot",
+		"oF": 0
+		},
+	"\/shopify\/assets\/AkkuratPro-Regular.otf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/shopify\/assets\/AkkuratPro-Regular.otf",
+		"oF": 0
+		},
+	"\/shopify\/assets\/AkkuratPro-Regular.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/shopify\/assets\/AkkuratPro-Regular.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/shopify\/assets\/AkkuratPro-Regular.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/shopify\/assets\/AkkuratPro-Regular.ttf",
+		"oF": 0
+		},
+	"\/shopify\/assets\/AkkuratPro-Regular.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/shopify\/assets\/AkkuratPro-Regular.woff",
+		"oF": 0
+		},
+	"\/shopify\/assets\/background.jpg": {
+		"ft": 16384,
+		"iS": 342812,
+		"oA": 0,
+		"oAP": "\/shopify\/assets\/background.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/shopify\/assets\/fastclick.min.js": {
 		"ft": 64,
 		"ma": 0,
@@ -43,137 +129,6 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
-		},
-	"\/shopify\/assets\/Graphik-Bold-Web.eot": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify\/assets\/Graphik-Bold-Web.eot",
-		"oF": 0
-		},
-	"\/shopify\/assets\/Graphik-Bold-Web.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/shopify\/assets\/Graphik-Bold-Web.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/shopify\/assets\/Graphik-Bold-Web.ttf": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify\/assets\/Graphik-Bold-Web.ttf",
-		"oF": 0
-		},
-	"\/shopify\/assets\/Graphik-Bold-Web.woff": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify\/assets\/Graphik-Bold-Web.woff",
-		"oF": 0
-		},
-	"\/shopify\/assets\/Graphik-Medium-Web.eot": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify\/assets\/Graphik-Medium-Web.eot",
-		"oF": 0
-		},
-	"\/shopify\/assets\/Graphik-Medium-Web.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/shopify\/assets\/Graphik-Medium-Web.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/shopify\/assets\/Graphik-Medium-Web.ttf": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify\/assets\/Graphik-Medium-Web.ttf",
-		"oF": 0
-		},
-	"\/shopify\/assets\/Graphik-Medium-Web.woff": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify\/assets\/Graphik-Medium-Web.woff",
-		"oF": 0
-		},
-	"\/shopify\/assets\/Graphik-Regular.eot": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify\/assets\/Graphik-Regular.eot",
-		"oF": 0
-		},
-	"\/shopify\/assets\/Graphik-Regular.otf": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify\/assets\/Graphik-Regular.otf",
-		"oF": 0
-		},
-	"\/shopify\/assets\/Graphik-Regular.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/shopify\/assets\/Graphik-Regular.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/shopify\/assets\/Graphik-Regular.ttf": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify\/assets\/Graphik-Regular.ttf",
-		"oF": 0
-		},
-	"\/shopify\/assets\/Graphik-Regular.woff": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify\/assets\/Graphik-Regular.woff",
-		"oF": 0
-		},
-	"\/shopify\/assets\/Graphik-Super-Web.eot": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify\/assets\/Graphik-Super-Web.eot",
-		"oF": 0
-		},
-	"\/shopify\/assets\/Graphik-Super-Web.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/shopify\/assets\/Graphik-Super-Web.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/shopify\/assets\/Graphik-Super-Web.ttf": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify\/assets\/Graphik-Super-Web.ttf",
-		"oF": 0
-		},
-	"\/shopify\/assets\/Graphik-Super-Web.woff": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/shopify\/assets\/Graphik-Super-Web.woff",
-		"oF": 0
 		},
 	"\/shopify\/assets\/home.jpg": {
 		"ft": 16384,
@@ -622,6 +577,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/shopify\/templates\/index.liquid",
+		"oF": 0
+		},
+	"\/shopify\/templates\/index.old.liquid": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/shopify\/templates\/index.old.liquid",
 		"oF": 0
 		},
 	"\/shopify\/templates\/list-collections.liquid": {
@@ -4932,7 +4894,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "\/src\/js\/home-min.js",
 		"oF": 0,
 		"sC": 3,
@@ -5257,6 +5219,23 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/src\/less\/site\/_search.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/src\/less\/site\/_splash.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/src\/less\/site\/_splash.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,

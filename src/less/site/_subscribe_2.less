@@ -1,10 +1,11 @@
 .subscribe {
 
   .cover();
-  z-index: 20;
+  z-index: 99;
   background-color: @black25;
   opacity: 0;
-  transition: opacity 700ms ease;
+  visibility: hidden;
+  transition: 700ms ease;
 
   & &-bg {
     background-color: @white;
@@ -16,6 +17,8 @@
     top: 0;
     right: 0;
     z-index: 20;
+    padding: @spacer;
+    color: @brown;
   }
 
   & &-primary {
@@ -54,8 +57,8 @@
 
   &.fs-swap {
     &-active {
-      opacity: 0;
-      visibility: hidden;
+      opacity: 1;
+      visibility: visible;
       & .subscribe {
         &-centered {
           margin-top: @spacer;

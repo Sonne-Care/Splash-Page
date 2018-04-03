@@ -1,36 +1,49 @@
-<!-- @include parts/header.kit -->
-
-<div class="home-wrapper fs-grid-fluid">
-  <div class="home-scene home-scene--one">
-    <div class="home-scene-content centered"></div>
-  </div>
-  <div class="home-scene home-scene--two fs-grid-fluid">
-    <div class="fs-row">
-      <div class="fs-cell fs-lg-5 fs-md-3 fs-sm-3 fs-lg-align-center fs-md-align-center">
-        <div class="home-scene-content main">
-          <div class="home-primary">Purposefully designed skin care</div>
-          <div class="home-secondary">Made for you and everyone else</div>
+<div class="splash">
+  <div class="splash-background background" data-background-options='{"source":"{{ 'background.jpg'  | asset_url }}"}'>
+    <div class="fs-row splash-content">
+      <div class="fs-cell fs-lg-5 fs-md-half fs-sm-3 fs-lg-align-center">
+        <div class="content">
+          <h1>A skincare routine designed just for you and everyone else.</h1>
+          <ul>
+            <li>Backed by science</li>
+            <li>Premium ingredients</li>
+            <li>Delivered monthy</li>
+            <li>launching soon</li>
+          </ul>
         </div>
       </div>
-      <div class="fs-cell fs-lg-7 fs-md-4 fs-sm-3">
-        <div class="home-scene-image transparent"></div>
+      <div class="fs-cell fs-lg-7 fs-md-half fs-sm-3 fs-lg-align-center splash-content-wrap">
       </div>
     </div>
   </div>
-  <div class="home-scene home-scene--three fs-grid-fluid">
+  <div class="splash-footer fs-grid-fluid">
     <div class="fs-row">
-      <div class="fs-cell fs-lg-9 fs-lg-push-3 fs-md-4 fs-lg-push-2 fs-sm-3">
-        <div class="home-scene-image background" data-background-options='{"source":"{{ 'SonneCare_311.jpg'  | asset_url }}"}'></div>
+      <div class="fs-cell fs-lg-2 fs-md-half fs-sm-full splash-footer-join">
+        <a href="/" class="button button-clear button-full button-logo">{{ 'sonne.svg'  | asset_url | img_tag }}</a>
+      </div>
+      <div class="fs-cell fs-lg-2 fs-md-half fs-sm-full splash-footer-social">
+        <a href="#" class="button button-clear button-icon"><i data-feather="facebook"></i></a>
+        <a href="#" class="button button-clear button-icon"><i data-feather="instagram"></i></a>
+        <a href="#" class="button button-clear button-icon"><i data-feather="mail"></i></a>
+      </div>
+      <div class="fs-cell fs-lg-2 fs-md-half fs-sm-full splash-footer-join">
+        <a href="#" class="button button-clear button-full button-join swap close" data-swap-target="#subscribe" data-swap-linked='.close'>Join the Mailing List</a>
+      </div>
+      <div class="fs-cell fs-lg-half fs-md-full fs-sm-full splash-footer-info">
+        <span class="button button-clear button-info">949-484-9310</span>
+        <a href="mailto:info@sonnecare.co" class="button button-clear button-info">info@sonnecare.com</a>
+        <span class="button button-clear button-info">© 2018 All Rights Reserved</span>
       </div>
     </div>
   </div>
 </div>
+
 <div id="subscribe" class="subscribe center">
   <div class="subscribe-centered">
     <div class="fs-row">
       <div class="fs-cell fs-lg-10 fs-md-5 fs-sm-3 fs-all-justify-center">
         <div class="fs-row subscribe-bg">
-          <a href="" class="subscribe-close swap" data-swap-target="#subscribe">Close</i></a>
+          <a href="" class="subscribe-close swap close" data-swap-target="#subscribe" data-swap-linked='.close'><i data-feather="x"></i></a>
           <div class="fs-cell fs-all-half fs-sm-hide fs-contained">{{ 'subscribe.jpg'  | asset_url | img_tag, '', 'img-responsive' }}</div>
           <div class="fs-cell fs-all-half fs-sm-full fs-lg-align-center fs-contained">
             <div class="subscribe-content">
@@ -44,20 +57,3 @@
     </div>
   </div>
 </div>
-
-<!-- @include parts/footer.kit -->
-
-
-{% comment %}
-<div class="index index--covered background" data-background-options='{"source":"{{ 'home.jpg'  | asset_url }}"}'>
-  <div class="index-content index-content--centered">
-    <div class="fs-row">
-      <div class="fs-cell fs-lg-half fs-md-half fs-sm-full">
-        {{ pages.home.content }}
-      </div>
-    </div>
-  </div>
-</div>
-
-{% include 'subscribe' %}
-{% endcomment %}
