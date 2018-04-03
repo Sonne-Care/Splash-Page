@@ -5698,7 +5698,16 @@ h6 {
 .splash .splash-footer-mobile .button {
   height: 50px!important;
   line-height: 50px!important;
-  padding: 0px!important;
+}
+@media screen and (min-width: 300px) {
+  .splash .splash-footer-mobile .button {
+    padding: 0px!important;
+  }
+}
+@media screen and (min-width: 980px) {
+  .splash .splash-footer-mobile .button {
+    padding: 0 8px!important;
+  }
 }
 .splash .splash-footer-mobile .divider {
   margin: 0;
@@ -5718,7 +5727,7 @@ h6 {
   font-weight: normal;
   color: #BC8557;
   text-transform: uppercase;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
   -webkit-font-smoothing: antialiased;
 }
 .splash .splash-footer .button.button-logo {

@@ -32,7 +32,7 @@ assets/fastclick.min.js:
 assets/home.jpg:
   development: 2018-03-28T16:05:45-04:00   0940634b7f224d8e310f520611ca440d
 assets/main.min.css:
-  development: 2018-04-03T16:22:34-04:00   a5754e5fcdd7fd181babfbbd4308bd8d
+  development: 2018-04-03T16:27:17-04:00   714150cb27cff5f67453acee7b61ec0d
 assets/main.min.css.map:
   development: 2018-03-28T15:13:19-04:00   e1338bb491140abd827b0f0ee1256615
 assets/main.min.js:
@@ -140,7 +140,7 @@ templates/customers/register.liquid:
 templates/customers/reset_password.liquid:
   development: 2018-03-28T15:13:23-04:00   c52cb1425f2aa4d0a3dbb557f3749fce
 templates/index.liquid:
-  development: 2018-04-03T16:21:12-04:00   1a2ed5f76b9d84643dd443796e5cdf90
+  development: 2018-04-03T16:25:13-04:00   bc17340d62200d8d4e6436e56bd42c16
 templates/index.old.liquid:
   development: 2018-04-03T15:21:54-04:00   c4850c871118ec2bb963f60c377f0cca
 templates/list-collections.liquid:
