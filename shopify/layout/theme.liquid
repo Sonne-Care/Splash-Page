@@ -27,7 +27,7 @@
 <meta property="og:title" content="{{ pageTitle }}" /> 
 <meta property="og:type" content="website" />
 <meta property="og:url" content="{{ canonical_url }}" />
-<meta property="og:image" content="" />
+<meta property="og:image" content="http:{{ 'social.jpg'  | asset_url }}" />
 <meta property="og:description" content="{{ pageDesc }}"/>
 <meta property="fb:app_id" content="" /> 
 
@@ -35,11 +35,9 @@
 
 <body class="fs-grid">
   <div id="wrapper">
-    {{ content_for_layout }}
-    {% comment %}
     {% include 'header' %}
+    {{ content_for_layout }}
     {% include 'footer' %}
-    {% endcomment %}
   </div>
   {{ 'fastclick.min.js' | asset_url | script_tag }}
   {{ 'theme.js'  | asset_url | script_tag }}

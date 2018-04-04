@@ -1,15 +1,13 @@
 <div id="header">
   <div class="fs-row">
-    <div class="fs-cell fs-all-half">
-      <a id="header-logo" class="button button-clear button-nav button-first" href="/">{{ shop.name }}</a>
+    <div class="fs-cell fs-all-half fs-sm-1">
+      <a id="header-logo" class="button button-clear button-nav button-first button-last" href="/">{{ shop.name }}</a>
     </div>
-    <div class="fs-cell fs-all-half text-right">
-      {% for link in linklists.main-menu.links %}
-      <a class="button button-clear button-nav fs-md-hide fs-sm-hide" href="{{ link.url }}">{{ link.title }}</a>
+    <div class="fs-cell fs-all-half fs-sm-2 text-right">
+      {% for link in linklists.social-menu.links %}
+      <a class="button button-clear button-nav button-icon" href="{{ link.url }}"><i data-feather="{{ link.title | handleize }}"></i></a>
       {% endfor %}
-      <a id="header-cart" class="button button-nav button-clear button-last" href="/cart">
-        Cart (<span id="header-cart-count" class="button-cart__count cart-count">{{ cart.item_count }}</span>)
-      </a>
+      <a id="header-join" class="button button-clear button-nav button-last fs-sm-hide" href="{{ link.url }}">Join the Mailing List</a>
     </div>
   </div>
 </div>

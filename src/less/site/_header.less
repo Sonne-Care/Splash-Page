@@ -1,19 +1,49 @@
 #header {
 
-  padding: @spacer 0;
-  border-bottom: 1px solid @lighterGray;
-  margin-bottom: @spacer*2;
+  border-bottom: 1px solid @brown;
+  z-index: 50;
+  width: 100%;
 
-  &-logo {
-
+  @media @tablet {
+    position: absolute;
+    top: 0;
   }
 
-  &-cart {
+  a {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: @brown;
+    font-size: 12px;
+  }
 
-    &-count {
+  &-logo {
+    background-image: url('sonne.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+    text-indent: -9999px;
+    @media @min {
+      width: 95px;  
+    }
+    @media @tablet {
+      width: 110px;  
+    }
+  }
+
+  &-join {
+    border-left: 1px solid @brown;
+    @media @min {
 
     }
-    
+    @media @tablet {
+      padding-left: @spacer;
+      margin-left: 20px;  
+    }
+  }
+
+  & .feather {
+    position: relative;
+    top: 8px;
   }
 
 }

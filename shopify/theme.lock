@@ -21,8 +21,6 @@ assets/AkkuratPro-Regular.ttf:
   development: 2018-04-03T15:32:56-04:00   07342e07965f37172b520b250770b66b
 assets/AkkuratPro-Regular.woff:
   development: 2018-04-03T15:32:56-04:00   fbf2c6b6cc6b6bf857c697aef48479b5
-assets/Graphik-Regular.eot:
-  development: 2018-03-28T15:13:17-04:00   42983d21ff0b5e28203a4e4377136137
 assets/SonneCare_311.jpg:
   development: 2018-04-02T21:50:09-04:00   b826b7b53cc4bf32326922ad341bcff4
 assets/background.jpg:
@@ -32,19 +30,21 @@ assets/fastclick.min.js:
 assets/home.jpg:
   development: 2018-03-28T16:05:45-04:00   0940634b7f224d8e310f520611ca440d
 assets/main.min.css:
-  development: 2018-04-03T16:27:17-04:00   714150cb27cff5f67453acee7b61ec0d
+  development: 2018-04-03T20:43:24-04:00   c668d1c5e4593317b282661c24a52f8a
 assets/main.min.css.map:
   development: 2018-03-28T15:13:19-04:00   e1338bb491140abd827b0f0ee1256615
 assets/main.min.js:
-  development: 2018-04-03T16:17:14-04:00   3e3a3d9827e260bedb31598fc4f0e37a
+  development: 2018-04-03T19:40:54-04:00   03c95e59a8d03dfd47262c6808aaeb29
 assets/moon.svg:
   development: 2018-04-02T21:08:52-04:00   2cf0a819a66e43280fe5ff83d9f2bdf5
 assets/option_selection.js:
   development: 2018-03-28T15:13:19-04:00   2c6231664b43b04ff80dc88d50fc347f
 assets/shopify_common.js:
   development: 2018-03-28T15:13:19-04:00   bf001459d7d6c7c05491db53511b03b1
+assets/social.jpg:
+  development: 2018-04-03T19:41:09-04:00   f16839ea9a9cbcd67729f9f8ae24773d
 assets/soldout.png:
-  development: 2018-03-28T15:13:19-04:00   6a7697db19e17aae7568e216c2b365af
+  development: 2018-04-03T19:41:25-04:00   6a7697db19e17aae7568e216c2b365af
 assets/sonne.svg:
   development: 2018-04-02T21:08:54-04:00   e114a6c1303813571d057ce53ef8b6b9
 assets/subscribe.jpg:
@@ -64,11 +64,11 @@ config/settings_data.json:
 config/settings_schema.json:
   development: 2018-03-28T15:36:26-04:00   65e9666af30ed7199f8f8f823c2b4df5
 layout/theme.liquid:
-  development: 2018-03-28T15:21:49-04:00   0eec23d825e76db62aceeccb40989506
+  development: 2018-04-03T19:42:13-04:00   b12fac4ae1122003f9ac80eeec34a27a
 layout/theme.naked.liquid:
   development: 2018-03-28T15:13:20-04:00   57a1d6cdeafc98ce8d294c03e8da1bf1
 locales/en.default.json:
-  development: 2018-03-28T15:13:20-04:00   0a791f30da40a2af3f9b331f7d3ec7fe
+  development: 2018-04-03T19:40:56-04:00   0a791f30da40a2af3f9b331f7d3ec7fe
 sections/explainer-template.liquid:
   development: 2018-03-28T15:13:15-04:00   6eb38774a728366b085dd10d6ffc11bc
 sections/feature-template.liquid:
@@ -84,7 +84,7 @@ snippets/collection-sorting.liquid:
 snippets/footer.liquid:
   development: 2018-03-28T15:13:20-04:00   671bc5505c302d1eb37efebf8e28b517
 snippets/header.liquid:
-  development: 2018-03-28T15:13:20-04:00   32284d97fd9562b87ff32075d7efc2cf
+  development: 2018-04-03T20:07:54-04:00   01d5313f270b03d57340f3e9e0053c3e
 snippets/notification.liquid:
   development: 2018-03-28T15:13:21-04:00   a14cbfc152e36d923b9afe402268a1be
 snippets/page-header.liquid:
@@ -100,7 +100,7 @@ snippets/product-image-single.liquid:
 snippets/product-images.liquid:
   development: 2018-03-28T15:13:21-04:00   6e148dd44447d2a89a18d384d86e551b
 snippets/product-item.liquid:
-  development: 2018-03-28T15:13:21-04:00   3f98d1ad44bf37489cc41d3e7be857bc
+  development: 2018-04-03T19:41:12-04:00   3f98d1ad44bf37489cc41d3e7be857bc
 snippets/product-thumbs.liquid:
   development: 2018-03-28T15:13:22-04:00   03058db53c6414be28c874d2ad9a1934
 snippets/search-grid-item.liquid:
@@ -112,9 +112,9 @@ snippets/subscribe-form.liquid:
 snippets/subscribe.liquid:
   development: 2018-04-02T12:25:25-04:00   cb848c3e2ed969e04de8c22ebf921c23
 snippets/swatch.liquid:
-  development: 2018-03-28T15:13:22-04:00   24862626269fffb3aa68f1cda342286c
+  development: 2018-04-03T19:40:54-04:00   24862626269fffb3aa68f1cda342286c
 snippets/swatches.liquid:
-  development: 2018-03-28T15:13:22-04:00   24862626269fffb3aa68f1cda342286c
+  development: 2018-04-03T19:40:55-04:00   24862626269fffb3aa68f1cda342286c
 templates/404.liquid:
   development: 2018-03-28T15:13:22-04:00   153e2e400162f1ffc97dba4700b0d62b
 templates/article.liquid:
@@ -140,7 +140,7 @@ templates/customers/register.liquid:
 templates/customers/reset_password.liquid:
   development: 2018-03-28T15:13:23-04:00   c52cb1425f2aa4d0a3dbb557f3749fce
 templates/index.liquid:
-  development: 2018-04-03T16:25:13-04:00   bc17340d62200d8d4e6436e56bd42c16
+  development: 2018-04-03T20:35:08-04:00   42c7aea638ceb97d179e5d7de1236831
 templates/index.old.liquid:
   development: 2018-04-03T15:21:54-04:00   c4850c871118ec2bb963f60c377f0cca
 templates/list-collections.liquid:

@@ -75,6 +75,20 @@ input[type='submit'] {
   &.button-nav {
     font-weight: normal;
     padding: 0 1.25rem;
+    @height : 70px;
+    @media @min {
+      height: @height - 20px;
+      line-height: @height - 20px;
+    }
+    @media @tablet {
+      height: @height;
+      line-height: @height;
+    }
+  }
+
+  &.button-icon {
+    padding: 0 4px;
+    color: @brown;
   }
 
   &.button-full {

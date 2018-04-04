@@ -197,6 +197,16 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/shopify\/assets\/social.jpg": {
+		"ft": 16384,
+		"iS": 119768,
+		"oA": 0,
+		"oAP": "\/shopify\/assets\/social.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/shopify\/assets\/soldout.png": {
 		"ft": 32768,
 		"iS": 1097,
@@ -5117,6 +5127,23 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/src\/less\/site\/_home.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
+	"\/src\/less\/site\/_home_2.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/src\/less\/site\/_home_2.css",
 		"oF": 0,
 		"oS": 0,
 		"rU": 0,
