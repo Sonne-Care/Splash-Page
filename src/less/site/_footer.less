@@ -1,5 +1,46 @@
 #footer {
-  padding: @spacer 0;
-  border-top: 1px solid @lighterGray;
-  margin-top: @spacer*2;
+  
+  padding: 10px 0;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: @gray;
+  font-weight: normal;
+  letter-spacing: 1px;
+
+  @size: 40px;
+
+  a {
+  	color: @brown;
+  	text-decoration: none;
+  	display: inline-block;
+  	height: @size;
+  	line-height: @size;
+  }
+
+  span {
+  	display: inline-block;
+  	height: @size;
+  	line-height: @size;
+  }
+
+  .feather {
+  	margin-right: 8px;
+  	position: relative;
+  	top: 7px;
+  }
+
+  &-left {
+  	a {
+  		margin-right: 10px;
+  	}
+  }
+  &-right {
+  	@media @min {
+  		text-align: left;
+  	}
+  	@media @mobile {
+  		text-align: right;
+  	}
+  }
+
 }

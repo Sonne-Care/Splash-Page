@@ -1,88 +1,27 @@
+{% assign content = pages.splash.content | split: '<hr>' %}
+
 <div class="home background" data-background-options='{"source":"{{ 'background.jpg'  | asset_url }}"}'>
   <div class="home-wrapper">
     <div class="fs-row">
-      <div class="fs-cell fs-lg-5 fs-md-half fs-sm-half fs-all-align-center">
+      <div class="fs-cell fs-lg-5 fs-md-half fs-sm-2 fs-all-align-center">
         <div class="home-content">
           {{ pages.splash.content }}
           <div class="home-content-join">
-            <a class="" href="{{ link.url }}">Join the Mailing List</a>
+            <a 
+            	class="swap" 
+            	data-swap-target='#subscribe'
+        			data-swap-linked='.close'
+            	href="#">Join the Mailing List</a>
           </div>
         </div>
       </div>
-      <div class="fs-cell fs-lg-7 fs-md-half fs-sm-half">
+      <div class="fs-cell fs-lg-7 fs-md-half fs-sm-1">
         <div class="home-spacer"></div>
       </div>
     </div>
   </div>
 </div>
 
-<div id="subscribe" class="subscribe center">
-  <div class="subscribe-centered">
-    <div class="fs-row">
-      <div class="fs-cell fs-lg-10 fs-md-5 fs-sm-3 fs-all-justify-center">
-        <div class="fs-row subscribe-bg">
-          <a href="" class="subscribe-close swap close" data-swap-target="#subscribe" data-swap-linked='.close'><i data-feather="x"></i></a>
-          <div class="fs-cell fs-all-half fs-sm-hide fs-contained">{{ 'subscribe.jpg'  | asset_url | img_tag, '', 'img-responsive' }}</div>
-          <div class="fs-cell fs-all-half fs-sm-full fs-lg-align-center fs-contained">
-            <div class="subscribe-content">
-              <div class="subscribe-primary">Join the Sonne email list</div>
-              <div class="subscribe-secondary">Be the first to know when we launch, receive special offers, and more.</div>
-              {% include 'subscribe-form' %}
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-{% comment %}
-<div class="splash">
-  <div class="splash-background background" data-background-options='{"source":"{{ 'background.jpg'  | asset_url }}"}'>
-    <div class="fs-row splash-content">
-      <div class="fs-cell fs-lg-5 fs-md-half fs-sm-2 fs-all-align-center">
-        <div class="content">
-          {{ pages.splash.content }}
-        </div>
-      </div>
-      <div class="fs-cell fs-lg-7 fs-md-half fs-sm-1 fs-all-align-center splash-content-wrap">
-      </div>
-    </div>
-  </div>
-  <div class="splash-footer">
-    <div class="fs-row">
-      <div class="fs-cell fs-lg-8 fs-md-half fs-sm-half splash-footer-join">
-        <a href="/" class="button button-clear button-full button-logo">{{ 'sonne.svg'  | asset_url | img_tag }}</a>
-      </div>
-      <div class="fs-cell fs-lg-2 fs-md-fourth fs-sm-half splash-footer-social">
-        <a href="https://www.facebook.com/sonnecare/" class="button button-clear button-icon"><i data-feather="facebook"></i></a>
-        <a href="http://instagram.com/sonneskincare/" class="button button-clear button-icon"><i data-feather="instagram"></i></a>
-        <a href="mailto:info@sonnecare.com" class="button button-clear button-icon"><i data-feather="mail"></i></a>
-      </div>
-      <div class="fs-cell fs-lg-2 fs-md-fourth fs-sm-hide splash-footer-join">
-        <a href="#" class="button button-clear button-full button-join swap close" data-swap-target="#subscribe" data-swap-linked='.close'>Join the Mailing List</a>
-      </div>
-      <div class="fs-cell fs-lg-hide fs-md-hide fs-sm-hide splash-footer-info">
-        <span class="button button-clear button-info">949-484-9310</span>
-        <a href="mailto:info@sonnecare.com" class="button button-clear button-info">info@sonnecare.com</a>
-        <span class="button button-clear button-info">© 2018 All Rights Reserved</span>
-      </div>
-    </div>
-  </div>
-  <div class="splash-footer mobile">
-    <div class="fs-row">
-      <div class="fs-cell fs-lg-full fs-md-full fs-sm-3 splash-footer-mobile">
-        <a href="#" class="button button-clear swap close fs-lg-hide" data-swap-target="#subscribe" data-swap-linked='.close'>Join the Mailing List</a>
-        <hr class="divider fs-lg-hide">
-        <span class="button button-clear button-info">949-484-9310</span>
-        <hr class="divider fs-lg-hide">
-        <a href="mailto:info@sonnecare.co" class="button button-clear button-info">info@sonnecare.com</a>
-        <hr class="divider fs-lg-hide">
-        <span class="button button-clear button-info">© 2018 All Rights Reserved</span>
-      </div>
-    </div>
-  </div>
-</div>
 
 <div id="subscribe" class="subscribe center">
   <div class="subscribe-centered">
@@ -103,4 +42,3 @@
     </div>
   </div>
 </div>
-{% endcomment %}

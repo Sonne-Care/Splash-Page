@@ -2,13 +2,23 @@
 
   &-spacer {
     @media @min {
-      height: 40vh;
+      height: 65vh;
     }
     @media @tablet {
       height: 100vh;  
     }
     @media @desktop {
       height: 100vh;  
+    }
+  }
+
+  &-mobile {
+    background-color: @creme;
+    padding: 0;
+    margin: 5px 0;
+    text-align: center;
+    @media @tablet {
+      display: none;
     }
   }
 
@@ -24,7 +34,7 @@
       color: @brown;
       margin: 0;
       @media @min {
-        font-size: 2.25rem;
+        font-size: 3.25rem;
       }
       @media @tablet {
         font-size: 48px;
@@ -35,9 +45,24 @@
     h3 {
       color: @brown;
       margin: 0 0 0;
-      padding: 20px 0 20px;
       line-height: 1.6;
-      font-size: 2.25rem;
+      @media @min {
+        font-size: 14px;
+        font-weight: normal;
+        padding: 10px 0;
+        br {
+          display: none;
+        }
+      }
+      @media @tablet {
+        font-size: 2.25rem; 
+        font-weight: 300; 
+        padding: 20px 0 20px;
+        br {
+          display: block;
+        }
+      }
+      
     }
 
     &-join {
@@ -51,8 +76,16 @@
         letter-spacing: 1px;
         font-size: 12px;
         font-weight: normal;
-        display: block;
-        padding: 10px 0;
+        display: inline-block;
+        padding: 14px @spacer 10px;
+        background-color: @brown;
+        color: @white;
+        transition: 300ms ease;
+        &:focus, &:hover {
+          background-color: darken(@brown, 10%);
+          color: @color-initial;
+          outline: 0;
+        }
       }
     }
 
@@ -62,7 +95,7 @@
       text-transform: uppercase;
       color: #A1A1A1;
       @media @min {
-        font-size: 12px;
+        font-size: 11px;
         letter-spacing: 1.5px;
       }
       @media @tablet {
@@ -71,8 +104,13 @@
       }
       li {
         display: block;
-        padding: 5px 0;
         font-weight: normal;
+        @media @min {
+          padding: 1px 0;
+        }
+        @media @tablet {
+          padding: 5px 0;
+        }
         //border-top: 1px solid @lightGray;
       }
     }

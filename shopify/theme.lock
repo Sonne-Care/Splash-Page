@@ -30,11 +30,11 @@ assets/fastclick.min.js:
 assets/home.jpg:
   development: 2018-03-28T16:05:45-04:00   0940634b7f224d8e310f520611ca440d
 assets/main.min.css:
-  development: 2018-04-03T20:43:24-04:00   c668d1c5e4593317b282661c24a52f8a
+  development: 2018-04-04T11:49:43-04:00   4cdaea84100dd6a4c412b98cf4457a01
 assets/main.min.css.map:
   development: 2018-03-28T15:13:19-04:00   e1338bb491140abd827b0f0ee1256615
 assets/main.min.js:
-  development: 2018-04-03T19:40:54-04:00   03c95e59a8d03dfd47262c6808aaeb29
+  development: 2018-04-04T11:07:36-04:00   379555525fbacc78da6c30f522f3919f
 assets/moon.svg:
   development: 2018-04-02T21:08:52-04:00   2cf0a819a66e43280fe5ff83d9f2bdf5
 assets/option_selection.js:
@@ -82,9 +82,9 @@ snippets/ajaxify-cart.liquid:
 snippets/collection-sorting.liquid:
   development: 2018-03-28T15:13:20-04:00   a45abeb9439eba8b29d6fb6da5328258
 snippets/footer.liquid:
-  development: 2018-03-28T15:13:20-04:00   671bc5505c302d1eb37efebf8e28b517
+  development: 2018-04-04T11:48:39-04:00   33c7b507ca9a2d61d0997956ccdefdba
 snippets/header.liquid:
-  development: 2018-04-03T20:07:54-04:00   01d5313f270b03d57340f3e9e0053c3e
+  development: 2018-04-04T11:20:07-04:00   e6c5f19a7c75099793535eb3f3e6ab7a
 snippets/notification.liquid:
   development: 2018-03-28T15:13:21-04:00   a14cbfc152e36d923b9afe402268a1be
 snippets/page-header.liquid:
@@ -140,7 +140,7 @@ templates/customers/register.liquid:
 templates/customers/reset_password.liquid:
   development: 2018-03-28T15:13:23-04:00   c52cb1425f2aa4d0a3dbb557f3749fce
 templates/index.liquid:
-  development: 2018-04-03T20:35:08-04:00   42c7aea638ceb97d179e5d7de1236831
+  development: 2018-04-04T11:43:18-04:00   111b7eea98de72022e5010d509c680ef
 templates/index.old.liquid:
   development: 2018-04-03T15:21:54-04:00   c4850c871118ec2bb963f60c377f0cca
 templates/list-collections.liquid:

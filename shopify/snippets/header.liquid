@@ -7,7 +7,12 @@
       {% for link in linklists.social-menu.links %}
       <a class="button button-clear button-nav button-icon" href="{{ link.url }}"><i data-feather="{{ link.title | handleize }}"></i></a>
       {% endfor %}
-      <a id="header-join" class="button button-clear button-nav button-last fs-sm-hide" href="{{ link.url }}">Join the Mailing List</a>
+      <a 
+        id="header-join" 
+        class="button button-clear button-nav button-last button-join fs-sm-hide swap" 
+        data-swap-target='#subscribe'
+        data-swap-linked='.close'
+        href="#">Join the Mailing List</a>
     </div>
   </div>
 </div>

@@ -40,7 +40,9 @@ function init(){
   feather.replace({
     'stroke-width': 1,
   });
-  $('.button-join').click();
+  setTimeout(function(){
+    $('.button-join').click();  
+  },2000);
 }
 
 init();
