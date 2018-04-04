@@ -8,7 +8,10 @@
       height: 100vh;  
     }
     @media @desktop {
-      height: 100vh;  
+      height: 90vh;  
+    }
+    @media @max {
+      height: 90vh;  
     }
   }
 
@@ -28,8 +31,11 @@
   }
 
   &-content {
-    padding-top: @spacer;
-
+    
+    @media @tablet {
+      padding-top: @spacer*2;  
+    }
+    
     h1 {
       color: @brown;
       margin: 0;
